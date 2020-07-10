@@ -7,5 +7,4 @@ pre = "<b>3. </b>"
 +++
 
 ### kubeone
-
-# how I installed kubeone!
+next level - modifications
