@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://fabian-born.github.io/general/</loc>
+    <lastmod>2020-04-14T12:53:59+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fabian-born.github.io/kubeone/kubeone-1-a/</loc>
+    <lastmod>2020-04-01T13:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fabian-born.github.io/multicloudconnect/</loc>
+    <lastmod>2020-04-14T12:54:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fabian-born.github.io/kubeone/</loc>
+    <lastmod>2020-04-14T17:13:21+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fabian-born.github.io/</loc>
+    <lastmod>2020-04-14T17:13:21+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fabian-born.github.io/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://fabian-born.github.io/showcase/</loc>
+  </url>
+  
+  <url>
+    <loc>https://fabian-born.github.io/tags/</loc>
+  </url>
+  
+</urlset>

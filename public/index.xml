@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcome to Doc Center on Documentation for Hugo Learn Theme</title>
+    <link>https://fabian-born.github.io/</link>
+    <description>Recent content in Welcome to Doc Center on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 14 Apr 2020 17:13:21 +0200</lastBuildDate>
+    
+	<atom:link href="https://fabian-born.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>modifications</title>
+      <link>https://fabian-born.github.io/kubeone/kubeone-1-a/</link>
+      <pubDate>Wed, 01 Apr 2020 13:00:00 +0200</pubDate>
+      
+      <guid>https://fabian-born.github.io/kubeone/kubeone-1-a/</guid>
+      <description>kubeone on NetApp HCI Prepare kubeone environment: first set variables
+export VSPHERE_ALLOW_UNVERIFIED_SSL=&amp;quot;true&amp;quot; export VSPHERE_PASSWORD=&amp;quot;passw0rd&amp;quot; export VSPHERE_SERVER=&amp;quot;hci-vcenter&amp;quot; export VSPHERE_USER=&amp;quot;administrator@vsphere.local&amp;quot; enable ssh agend this is the easiest way to execute ssh commeands remotely.
+eval `ssh-agent` ssh-add Changes in output.tf fabian@cni-jump-01:~/k8stools/kubeone/examples/terraform/vsphere$ cat outputs.tf /* Copyright 2019 The KubeOne Authors. Licensed under the Apache License, Version 2.0 (the &amp;quot;License&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.</description>
+    </item>
+    
+    <item>
+      <title>Showcase</title>
+      <link>https://fabian-born.github.io/showcase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fabian-born.github.io/showcase/</guid>
+      <description>TAT by OVH Tshark.dev by Ross Jacobs inteliver by Amir Lavasani </description>
+    </item>
+    
+  </channel>
+</rss>

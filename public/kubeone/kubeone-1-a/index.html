@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.68.3" />
+    <meta name="description" content="Documentation Center for my Projects">
+<meta name="author" content="Fabian Born">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>modifications :: Documentation for Hugo Learn Theme</title>
+
+    
+    <link href="/css/nucleus.css?1594382608" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1594382608" rel="stylesheet">
+    <link href="/css/hybrid.css?1594382608" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1594382608" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1594382608" rel="stylesheet">
+    <link href="/css/auto-complete.css?1594382608" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1594382608" rel="stylesheet">
+    <link href="/css/theme.css?1594382608" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1594382608" rel="stylesheet">
+    
+      <link href="/css/theme-fabian.css?1594382608" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1594382608"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/kubeone/kubeone-1-a/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+	<img src="/fabianborn-logo.png"></img>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1594382608"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1594382608"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/fabian-born.github.io";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1594382608"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/general/" title="General" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/general/">
+          <b>1. </b>General
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/multicloudconnect/" title="MultiCloudConnect" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/multicloudconnect/">
+          <b>2. </b>MultiCloudConnect
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/kubeone/" title="Kubeone" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/kubeone/">
+          <b>3. </b>Kubeone
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/kubeone/kubeone-1-a/" title="modifications" class="dd-item active">
+        <a href="/kubeone/kubeone-1-a/">
+        <b></b>modifications
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/fabian-born"><i class='fab fa-fw fa-github'></i> GitHub repo</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://blog.fabianborn.net/"><i class='fab fa-fw fa-globe'></i> Blog - Fabian Born</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://twitter.com/NTAPFabian"><i class='fab fa-fw fa-twitter'></i> Fabian Born</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      <center>
+    
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                   modifications 
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#kubeone-on-netapp-hci">kubeone on NetApp HCI</a>
+      <ul>
+        <li><a href="#prepare-kubeone-environment">Prepare kubeone environment:</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              modifications
+            </h1>
+          
+
+        
+
+
+
+<h2 id="kubeone-on-netapp-hci">kubeone on NetApp HCI</h2>
+<h3 id="prepare-kubeone-environment">Prepare kubeone environment:</h3>
+<p>first set variables</p>
+<pre><code>export VSPHERE_ALLOW_UNVERIFIED_SSL=&quot;true&quot;
+export VSPHERE_PASSWORD=&quot;passw0rd&quot;
+export VSPHERE_SERVER=&quot;hci-vcenter&quot;
+export VSPHERE_USER=&quot;administrator@vsphere.local&quot;
+</code></pre><h5 id="enable-ssh-agend">enable ssh agend</h5>
+<p>this is the easiest way to execute ssh commeands remotely.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">eval <span style="color:#e6db74">`</span>ssh-agent<span style="color:#e6db74">`</span>
+ssh-add
+</code></pre></div><h5 id="changes-in-outputtf">Changes in output.tf</h5>
+<pre><code>fabian@cni-jump-01:~/k8stools/kubeone/examples/terraform/vsphere$ cat outputs.tf 
+/*
+Copyright 2019 The KubeOne Authors.
+
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+output &quot;kubeone_api&quot; {
+  description = &quot;kube-apiserver LB endpoint&quot;
+
+  value = {
+    endpoint = vsphere_virtual_machine.lb[0].default_ip_address
+  }
+}
+
+output &quot;kubeone_hosts&quot; {
+  description = &quot;Control plane endpoints to SSH to&quot;
+
+  value = {
+    control_plane = {
+      cluster_name         = var.cluster_name
+      cloud_provider       = &quot;vsphere&quot;
+      private_address      = []
+      public_address       = vsphere_virtual_machine.control_plane.*.default_ip_address
+      ssh_agent_socket     = var.ssh_agent_socket
+      ssh_port             = var.ssh_port
+      ssh_private_key_file = var.ssh_private_key_file
+      ssh_user             = var.ssh_username
+    }
+  }
+}
+
+output &quot;kubeone_workers&quot; {
+  description = &quot;Workers definitions, that will be transformed into MachineDeployment object&quot;
+
+  value = {
+    # following outputs will be parsed by kubeone and automatically merged into
+    # corresponding (by name) worker definition
+    &quot;${var.cluster_name}-pool1&quot; = {
+      replicas = 1
+      providerSpec = {
+        sshPublicKeys   = [file(var.ssh_public_key_file)]
+        operatingSystem = var.worker_os
+        operatingSystemSpec = {
+          distUpgradeOnBoot = false
+        }
+        cloudProviderSpec = {
+          # provider specific fields:
+          # see example under `cloudProviderSpec` section at:
+          # https://github.com/kubermatic/machine-controller/blob/master/examples/vsphere-machinedeployment.yaml
+          
+          cluster       = var.compute_cluster_name
+          cpus          = 2
+          datacenter    = var.dc_name
+          # Either Datastore or DatastoreCluster have to be provided.
+          datastore        = var.datastore_name
+          datastoreCluster = var.datastore_cluster_name
+          # Optional: Resize the root disk to this size. Must be bigger than the existing size
+          # Default is to leave the disk at the same size as the template
+          diskSizeGB     = 10
+          memoryMB       = 2048
+          templateVMName = var.template_name
+          vmNetName      = var.network_name
+          # Red Hat subscription manager offline token (only to be used for RHEL)
+          # rhsmOfflineToken = &quot;&quot;
+          # modification for NETAPP HCI
+          allowInsecure = true
+          folder = var.vmfolder
+        }
+      }
+    }
+  }
+}
+</code></pre><h5 id="change-the-terraform-vars-terraformtfvars">change the terraform vars (terraform.tfvars)</h5>
+<pre><code>cluster_name   = &quot;kubeoneonhci&quot;
+datastore_name = &quot;NetApp-HCI-Datastore-02&quot;
+network_name   = &quot;NetApp HCI VDS 01-VM_Network&quot;
+template_name  = &quot;ubuntu-image&quot;
+ssh_username   = &quot;ubuntu&quot;
+dc_name = &quot;NetApp-HCI-Datacenter-01&quot;
+compute_cluster_name = &quot;NetApp-HCI-Cluster-01&quot;
+ssh_public_key_file = &quot;/home/&lt;username&gt;/.ssh/id_rsa.pub&quot;
+ssh_private_key_file = &quot;/home/&lt;username&gt;/.ssh/id_rsa&quot;
+</code></pre><h5 id="configuration-file-for-kubernetes-configyaml">configuration file for kubernetes (config.yaml)</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">apiVersion</span>: kubeone.io/v1alpha1
+<span style="color:#66d9ef">kind</span>: KubeOneCluster
+<span style="color:#66d9ef">versions</span>:
+  <span style="color:#66d9ef">kubernetes</span>: <span style="color:#e6db74">&#39;1.17.4&#39;</span>
+<span style="color:#66d9ef">cloudProvider</span>:
+  <span style="color:#66d9ef">name</span>: <span style="color:#e6db74">&#39;vsphere&#39;</span>
+  <span style="color:#66d9ef">cloudConfig</span>: <span style="color:#e6db74">|
+</span><span style="color:#e6db74">    [Global]</span>
+    secret-name = <span style="color:#e6db74">&#34;cloud-provider-credentials&#34;</span>
+    secret-namespace = <span style="color:#e6db74">&#34;kube-system&#34;</span>
+    port = <span style="color:#e6db74">&#34;443&#34;</span>
+    insecure-flag = <span style="color:#e6db74">&#34;1&#34;</span>
+
+    [VirtualCenter <span style="color:#e6db74">&#34;hci-vcenter&#34;</span>]
+    datacenters = <span style="color:#e6db74">&#34;NetApp-HCI-Datacenter-01&#34;</span>
+
+    [Workspace]
+    server = <span style="color:#e6db74">&#34;hci-vcenter&#34;</span>
+    datacenter = <span style="color:#e6db74">&#34;NetApp-HCI-Datacenter-01&#34;</span>
+    default-datastore = <span style="color:#e6db74">&#34;NetApp-HCI-Datastore-02&#34;</span>
+    resourcepool-path = <span style="color:#e6db74">&#34;Resources&#34;</span>
+    folder = <span style="color:#e6db74">&#34;k8sk1&#34;</span>
+
+    [Disk]
+    scsicontrollertype = pvscsi
+
+    [Network]
+    public-network = <span style="color:#e6db74">&#34;NetApp HCI VDS 01-VM_Network&#34;</span>
+</code></pre></div>
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1594382608"></script>
+    <script src="/js/perfect-scrollbar.min.js?1594382608"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1594382608"></script>
+    <script src="/js/jquery.sticky.js?1594382608"></script>
+    <script src="/js/featherlight.min.js?1594382608"></script>
+    <script src="/js/highlight.pack.js?1594382608"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1594382608"></script>
+    <script src="/js/learn.js?1594382608"></script>
+    <script src="/js/hugo-learn.js?1594382608"></script>
+
+    <link href="/mermaid/mermaid.css?1594382608" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1594382608"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-105947713-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+</html>
+

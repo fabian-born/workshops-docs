@@ -1,0 +1,57 @@
+[
+{
+	"uri": "https://fabian-born.github.io/general/",
+	"title": "General",
+	"tags": [],
+	"description": "",
+	"content": "Chapter 1 General Requirements \u0026amp; Support please join my slack channel\n"
+},
+{
+	"uri": "https://fabian-born.github.io/kubeone/kubeone-1-a/",
+	"title": "modifications",
+	"tags": [],
+	"description": "",
+	"content": "kubeone on NetApp HCI Prepare kubeone environment: first set variables\nexport VSPHERE_ALLOW_UNVERIFIED_SSL=\u0026quot;true\u0026quot; export VSPHERE_PASSWORD=\u0026quot;passw0rd\u0026quot; export VSPHERE_SERVER=\u0026quot;hci-vcenter\u0026quot; export VSPHERE_USER=\u0026quot;administrator@vsphere.local\u0026quot; enable ssh agend this is the easiest way to execute ssh commeands remotely.\neval `ssh-agent` ssh-add Changes in output.tf fabian@cni-jump-01:~/k8stools/kubeone/examples/terraform/vsphere$ cat outputs.tf /* Copyright 2019 The KubeOne Authors. Licensed under the Apache License, Version 2.0 (the \u0026quot;License\u0026quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \u0026quot;AS IS\u0026quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. */ output \u0026quot;kubeone_api\u0026quot; { description = \u0026quot;kube-apiserver LB endpoint\u0026quot; value = { endpoint = vsphere_virtual_machine.lb[0].default_ip_address } } output \u0026quot;kubeone_hosts\u0026quot; { description = \u0026quot;Control plane endpoints to SSH to\u0026quot; value = { control_plane = { cluster_name = var.cluster_name cloud_provider = \u0026quot;vsphere\u0026quot; private_address = [] public_address = vsphere_virtual_machine.control_plane.*.default_ip_address ssh_agent_socket = var.ssh_agent_socket ssh_port = var.ssh_port ssh_private_key_file = var.ssh_private_key_file ssh_user = var.ssh_username } } } output \u0026quot;kubeone_workers\u0026quot; { description = \u0026quot;Workers definitions, that will be transformed into MachineDeployment object\u0026quot; value = { # following outputs will be parsed by kubeone and automatically merged into # corresponding (by name) worker definition \u0026quot;${var.cluster_name}-pool1\u0026quot; = { replicas = 1 providerSpec = { sshPublicKeys = [file(var.ssh_public_key_file)] operatingSystem = var.worker_os operatingSystemSpec = { distUpgradeOnBoot = false } cloudProviderSpec = { # provider specific fields: # see example under `cloudProviderSpec` section at: # https://github.com/kubermatic/machine-controller/blob/master/examples/vsphere-machinedeployment.yaml cluster = var.compute_cluster_name cpus = 2 datacenter = var.dc_name # Either Datastore or DatastoreCluster have to be provided. datastore = var.datastore_name datastoreCluster = var.datastore_cluster_name # Optional: Resize the root disk to this size. Must be bigger than the existing size # Default is to leave the disk at the same size as the template diskSizeGB = 10 memoryMB = 2048 templateVMName = var.template_name vmNetName = var.network_name # Red Hat subscription manager offline token (only to be used for RHEL) # rhsmOfflineToken = \u0026quot;\u0026quot; # modification for NETAPP HCI allowInsecure = true folder = var.vmfolder } } } } } change the terraform vars (terraform.tfvars) cluster_name = \u0026quot;kubeoneonhci\u0026quot; datastore_name = \u0026quot;NetApp-HCI-Datastore-02\u0026quot; network_name = \u0026quot;NetApp HCI VDS 01-VM_Network\u0026quot; template_name = \u0026quot;ubuntu-image\u0026quot; ssh_username = \u0026quot;ubuntu\u0026quot; dc_name = \u0026quot;NetApp-HCI-Datacenter-01\u0026quot; compute_cluster_name = \u0026quot;NetApp-HCI-Cluster-01\u0026quot; ssh_public_key_file = \u0026quot;/home/\u0026lt;username\u0026gt;/.ssh/id_rsa.pub\u0026quot; ssh_private_key_file = \u0026quot;/home/\u0026lt;username\u0026gt;/.ssh/id_rsa\u0026quot; configuration file for kubernetes (config.yaml) apiVersion: kubeone.io/v1alpha1 kind: KubeOneCluster versions: kubernetes: \u0026#39;1.17.4\u0026#39; cloudProvider: name: \u0026#39;vsphere\u0026#39; cloudConfig: | [Global] secret-name = \u0026#34;cloud-provider-credentials\u0026#34; secret-namespace = \u0026#34;kube-system\u0026#34; port = \u0026#34;443\u0026#34; insecure-flag = \u0026#34;1\u0026#34; [VirtualCenter \u0026#34;hci-vcenter\u0026#34;] datacenters = \u0026#34;NetApp-HCI-Datacenter-01\u0026#34; [Workspace] server = \u0026#34;hci-vcenter\u0026#34; datacenter = \u0026#34;NetApp-HCI-Datacenter-01\u0026#34; default-datastore = \u0026#34;NetApp-HCI-Datastore-02\u0026#34; resourcepool-path = \u0026#34;Resources\u0026#34; folder = \u0026#34;k8sk1\u0026#34; [Disk] scsicontrollertype = pvscsi [Network] public-network = \u0026#34;NetApp HCI VDS 01-VM_Network\u0026#34; "
+},
+{
+	"uri": "https://fabian-born.github.io/multicloudconnect/",
+	"title": "MultiCloudConnect",
+	"tags": [],
+	"description": "",
+	"content": "Chapter X Some Chapter title Lorem Ipsum.\n"
+},
+{
+	"uri": "https://fabian-born.github.io/kubeone/",
+	"title": "Kubeone",
+	"tags": [],
+	"description": "",
+	"content": "kubeone how I installed kubeone! "
+},
+{
+	"uri": "https://fabian-born.github.io/",
+	"title": "Welcome to Doc Center",
+	"tags": [],
+	"description": "",
+	"content": "Welcome to my Documentation Center "
+},
+{
+	"uri": "https://fabian-born.github.io/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://fabian-born.github.io/showcase/",
+	"title": "Showcase",
+	"tags": [],
+	"description": "",
+	"content": "TAT by OVH Tshark.dev by Ross Jacobs inteliver by Amir Lavasani "
+},
+{
+	"uri": "https://fabian-born.github.io/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]

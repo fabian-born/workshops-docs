@@ -1,0 +1,48 @@
+baseURL = "https://fabian-born.github.io"
+languageCode = "en-US"
+defaultContentLanguage = "en"
+
+title = "Documentation Center"
+theme = "hugo-theme-learn"
+themesdir = "./themes"
+metaDataFormat = "yaml"
+defaultContentLanguageInSubdir= true
+
+[params]
+  editURL = ""
+  disableSearch = false
+  description = "Documentation Center for my Projects"
+  author = "Fabian Born"
+  showVisitedLinks = false
+  disableBreadcrumb = true
+  disableNextPrev = true
+  themeVariant = "fabian"
+  disableLanguageSwitchingButton = true
+  ordersectionsby = "weight"
+  
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[Languages]
+[Languages.en]
+title = "Documentation for Hugo Learn Theme"
+weight = 1
+languageName = "English"
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
+url = "https://github.com/fabian-born"
+weight = 10
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-fw fa-globe'></i> Blog - Fabian Born"
+url = "https://blog.fabianborn.net/"
+weight = 15
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-fw fa-twitter'></i> Fabian Born"
+url = "https://twitter.com/NTAPFabian"
+
+weight = 20
+
+
