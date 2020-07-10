@@ -1,4 +1,4 @@
-baseURL = "https://fabian-born.github.io"
+baseURL = "https://docs.fabianborn.net"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
@@ -9,7 +9,7 @@ metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
 
 [params]
-  editURL = ""
+  editURL = "https://github.com/fabian-born/docs/edit/master/content/"
   disableSearch = false
   description = "Documentation Center for my Projects"
   author = "Fabian Born"
