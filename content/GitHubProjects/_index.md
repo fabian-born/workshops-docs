@@ -1,5 +1,5 @@
 +++
-title = "GitHub Projects"
+title = "GitHubProjects"
 date = 2023-08-14T17:13:21+02:00
 weight = 5
 chapter = true
