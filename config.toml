@@ -3,7 +3,7 @@ languageCode = "en-US"
 defaultContentLanguage = "en"
 
 title = "Documentation Center"
-theme = "hugo-theme-learn"
+theme = "hugo-theme-relearn"
 themesdir = "./themes"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
