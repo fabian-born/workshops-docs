@@ -1,4 +1,4 @@
-baseURL = "https://docs.fabianborn.net"
+baseURL = "https://workshops.fabianborn.net"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
@@ -9,9 +9,9 @@ metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
 
 [params]
-  editURL = "https://github.com/fabian-born/docs/edit/master/content/"
+  editURL = "https://github.com/fabian-born/workshop-docs/edit/master/content/"
   disableSearch = false
-  description = "Documentation Center for my Projects"
+  description = "Documentation Center for my workshops"
   author = "Fabian Born"
   showVisitedLinks = false
   disableBreadcrumb = true
@@ -39,10 +39,5 @@ name = "<i class='fab fa-fw fa-globe'></i> Blog - Fabian Born"
 url = "https://blog.fabianborn.net/"
 weight = 15
 
-[[menu.shortcuts]]
-name = "<i class='fab fa-fw fa-twitter'></i> Fabian Born"
-url = "https://twitter.com/NTAPFabian"
-
-weight = 20
 
 
