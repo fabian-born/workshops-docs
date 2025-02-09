@@ -2,5 +2,5 @@
 title: "Welcome to Doc Center"
 ---
 
-# Welcome to my Documentation Center
+# Welcome to my Workshop documentaion center
 
