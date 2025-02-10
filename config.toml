@@ -18,7 +18,8 @@ defaultContentLanguageInSubdir= true
 #  themeVariant = "fabian"
   disableLanguageSwitchingButton = true
   ordersectionsby = "weight"
-  
+  disableLandingPageButton = false
+ 
   [params.author]
     name = 'Fabian Born'
 
