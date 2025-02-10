@@ -15,7 +15,7 @@ defaultContentLanguageInSubdir= true
   showVisitedLinks = false
   disableBreadcrumb = true
   disableNextPrev = true
-  themeVariant = "fabian"
+#  themeVariant = "fabian"
   disableLanguageSwitchingButton = true
   ordersectionsby = "weight"
   
