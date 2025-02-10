@@ -8,7 +8,6 @@ type = "changelog"
 weight = 5
 +++
 
-{{% pages showdivider="true" showhidden="true" hidevisible="true" showtitle="true" %}}
 
 
 #### Content comming soon!
