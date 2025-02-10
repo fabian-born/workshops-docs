@@ -12,7 +12,6 @@ defaultContentLanguageInSubdir= true
   editURL = "https://github.com/fabian-born/workshop-docs/edit/master/content/"
   disableSearch = false
   description = "Documentation Center for my workshops"
-  author = "Fabian Born"
   showVisitedLinks = false
   disableBreadcrumb = true
   disableNextPrev = true
@@ -20,6 +19,9 @@ defaultContentLanguageInSubdir= true
   disableLanguageSwitchingButton = true
   ordersectionsby = "weight"
   
+  [params.author]
+    name = 'Fabian Born'
+
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
