@@ -1,8 +1,14 @@
 +++
+alwaysopen = false
+categories = ["reference"]
+description = "The detailed changelog"
+disableToc = false
 title = "Changelog"
-weight = 99
-pre = "<b></b>"
+type = "changelog"
+weight = 5
 +++
 
-#### Content comming soon!
 {{% pages showdivider="true" showhidden="true" hidevisible="true" showtitle="true" %}}
+
+
+#### Content comming soon!
