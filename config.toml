@@ -18,9 +18,9 @@ defaultContentLanguageInSubdir= true
 #  themeVariant = "fabian"
   disableLanguageSwitchingButton = true
   ordersectionsby = "weight"
-  themeVariant = ['auto', 'zen-dark']
   disableLandingPageButton = false
- 
+  [[params.themeVariant]]
+    identifier = 'zen-dark' 
   [params.author]
     name = 'Fabian Born'
 
